@@ -4007,6 +4007,7 @@ function requestCommentPager(contextUrl, continuationToken, useLogin, useMobile)
 
 	if(data?.frameworkUpdates?.entityBatchUpdate?.mutations) {
 		log("New comments model");
+		log("Test");
 		const mutations = data.frameworkUpdates.entityBatchUpdate.mutations;
 		if(mutations.length > 0) {
 			log("Mutation length greater than 0");
