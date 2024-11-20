@@ -8,9 +8,9 @@
 	"repositoryUrl": "https://github.com/michael-oberpriller/grayjay-plugin-youtube/tree/testing",
 	"scriptUrl": "./YoutubeScript.js",
 
-	"version": 209,
+	"version": 210,
 	"iconUrl": "./youtube.png",
-	"id": "35ae969a-a7db-11ed-afa1-0242ac120002",
+	"id": "35ae969a-a7db-11ed-afa1-0242ac120001",
 	
 	"scriptSignature": "",
 	"scriptPublicKey": "",
