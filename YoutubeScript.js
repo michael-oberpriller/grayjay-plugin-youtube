@@ -4029,7 +4029,7 @@ function requestCommentPager(contextUrl, continuationToken, useLogin, useMobile)
 					null;
 				
 				const authorEndpoint = cobj.author?.channelCommand?.innertubeCommand?.commandMetadata?.webCommandMetadata?.url;
-				log("Comment has " extractHumanNumber_Integer(cobj.toolbar?.likeCountLiked) + "likes");
+				log("Comment has " + extractHumanNumber_Integer(cobj.toolbar?.likeCountLiked) + "likes");
 				comments.push(new YTComment({
 					contextUrl: contextUrl,
 					author: new PlatformAuthorLink(new PlatformID(PLATFORM, cobj?.author?.displayName, config.id, PLATFORM_CLAIMTYPE), cobj.author.displayName, (authorEndpoint) ? URL_BASE + authorEndpoint : "", cobj.author.avatarThumbnailUrl),
