@@ -4,7 +4,7 @@
 	"author": "FUTO",
 	"authorUrl": "https://futo.org",
 	"platformUrl": "https://youtube.com",
-	"sourceUrl": "https://github.com/michael-oberpriller/grayjay-plugin-youtube/edit/testing/YoutubeConfig.json",
+	"sourceUrl": "https://github.com/michael-oberpriller/grayjay-plugin-youtube/blob/testing/YoutubeConfig.json",
 	"repositoryUrl": "https://github.com/michael-oberpriller/grayjay-plugin-youtube/tree/testing",
 	"scriptUrl": "./YoutubeScript.js",
 
