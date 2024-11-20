@@ -4009,6 +4009,7 @@ function requestCommentPager(contextUrl, continuationToken, useLogin, useMobile)
 		log("New comments model");
 		const mutations = data.frameworkUpdates.entityBatchUpdate.mutations;
 		if(mutations.length > 0) {
+			log("Mutation length greater than 0");
 			const comments = [];
 			
 			let parentItems = [];
@@ -4018,8 +4019,9 @@ function requestCommentPager(contextUrl, continuationToken, useLogin, useMobile)
 					[]));
 			parentItems = parentItems.filter(x=>x.commentThreadRenderer);
 			const commentObjects = mutations.filter(x=>x?.payload?.commentEntityPayload);
-
+			log("Right before for loop");
 			for(let commentObject of commentObjects) {
+				log("In for loop");
 				const cobj = commentObject?.payload?.commentEntityPayload ?? {};
 				const parent = parentItems.find(x=>x.commentThreadRenderer?.commentViewModel?.commentViewModel?.commentKey == commentObject.entityKey);
 				const replyContents = parent?.commentThreadRenderer?.replies?.commentRepliesRenderer?.contents;
