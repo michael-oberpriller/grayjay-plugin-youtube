@@ -1034,7 +1034,7 @@ source.getComments = (url) => {
 		url = url.replace("www", "m");
 
 	//const html = requestPage(url, {}, useLogin);
-	const initialData = requestInitialData(url, useLogin, useLogin);
+	const initialData = requestInitialData(url, false, useLogin);
 	const contents = initialData.contents;
 	const result = contents.twoColumnWatchNextResults?.results?.results?.contents ??
 		contents.singleColumnWatchNextResults?.results?.results?.contents ??
